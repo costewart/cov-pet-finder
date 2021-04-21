@@ -1,0 +1,19 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+h1 {
+  padding-top: 50px;
+  color: #444444;
+}
+
+.logo-wrapper {
+  padding: 10px;
+}
+
+.logo {
+  height: 100px;
+  width: 185px;
+}
