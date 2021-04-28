@@ -1,16 +1,12 @@
 .top-bar {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 h1 {
-  padding-top: 50px;
+  padding-top: 45px;
+  padding-left: 15px;
   color: #444444;
-}
-
-.logo-wrapper {
-  padding: 10px;
 }
 
 .logo {

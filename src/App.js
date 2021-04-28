@@ -1,13 +1,13 @@
 import React from "react";
-import List from "./components/List";
+import Body from "./components/Body/Body";
 import TopBar from "./components/TopBar/TopBar";
 import "./App.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       <TopBar />
-      <List />
+      <Body />
     </div>
   );
 };

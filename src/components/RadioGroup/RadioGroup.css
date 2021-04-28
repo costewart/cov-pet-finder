@@ -1,0 +1,23 @@
+.RadioGroup {
+    display: flex;
+}
+
+.RadioGroup .Radio {
+    padding: 10px;
+}
+
+.RadioGroup input {
+  flex-grow: unset;
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+.RadioGroup .flex-row {
+  align-items: center;
+  display: flex;
+}
+
+.RadioGroup .flex-row p {
+  margin: 5px 0;
+}
