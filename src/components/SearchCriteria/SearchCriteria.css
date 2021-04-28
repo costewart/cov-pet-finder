@@ -1,5 +1,41 @@
 .searchBox {
   width: 1000px;
-  height: 200px;
-  background: rgba(1, 121, 177, 255);
+  background: #75b84c;
+  padding: 20px;
+}
+
+.searchBox h3 {
+  color: #444444;
+  font-size: 16px;
+}
+
+.searchBox button {
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 12px;
+  background-color: #008cba;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor:pointer;
+}
+
+
+.searchBox input[type="text"] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-color: none;
+}
+
+.searchBox select {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
 }

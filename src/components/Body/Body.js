@@ -32,7 +32,7 @@ const Body = () => {
 
   return (
       <div>
-          <SearchCriteria/>
+          <SearchCriteria onSubmit={ searchData }/>
       {/* <List /> */}
       {/* <Results results={results} /> */}
     </div>

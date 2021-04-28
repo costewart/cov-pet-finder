@@ -2,32 +2,43 @@ import React from "react";
 import RadioGroup from "../RadioGroup";
 import "./SearchCriteria.css";
 
-const SearchCriteria = () => {
+const SearchCriteria = ({ onSubmit }) => {
   return (
     <div className="searchBox">
       <form onSubmit={() => {}}>
         <label>
-          <p>Name</p>
-          <input name="name" />
+          <h3>Name</h3>
+          <input type="text" name="name" />
         </label>
 
         <label>
-          <p>Apples</p>
-          <select name="apple">
-            <option value="">--Please choose an option--</option>
-            <option value="fuji">Fuji</option>
-            <option value="jonathan">Jonathan</option>
-            <option value="honey-crisp">Honey Crisp</option>
+          <h3>Breed</h3>
+          <select name="breed">
+            <option value="">-- Please select a breed --</option>
+            <option value="unknown">Unknown</option>
+            <option value="pitbull">PitBull</option>
+            <option value="pug">Pug</option>
+            <option value="husky">Husky</option>
           </select>
         </label>
         <RadioGroup
           items={[
             { label: "Female", checked: true },
             { label: "Male" },
-            { label: "Unknown"}
+            { label: "Unknown" },
           ]}
         />
-        <button type="submit">Submit</button>
+
+        <RadioGroup
+          items={[
+            { label: "Cat", checked: true },
+            { label: "Dog" },
+            { label: "Other" },
+          ]}
+        />
+        <button type="submit" onClick={onSubmit}>
+          Submit
+        </button>
       </form>
     </div>
   );
