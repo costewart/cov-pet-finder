@@ -36,7 +36,7 @@ const SearchCriteria = ({ onSubmit }) => {
             { label: "Other" },
           ]}
         />
-        <button type="submit" onClick={onSubmit}>
+        <button type="submit" onClick={(e) => onSubmit(e)}>
           Submit
         </button>
       </form>
